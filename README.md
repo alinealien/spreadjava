@@ -1,6 +1,6 @@
 #  SPREAD JAVA DEVELOPER
 
-### Apresentação Geral
+### Apresentação Geral - Aula Dominando IDEs
 
 * **Java** é uma linguagem de progração orientada a objetos desenvolvida na década de 90, na empresa Sun Microsystems e posteriormente adquirida pela Oracle em 2008.
 * Desde seu lançamento, em maio de 1995, a plataforma Java foi adotada mais rapidamente do que qualquer outra linguagem de programação na história da computação.
@@ -65,9 +65,74 @@
 
 
 * **IDE**, ou ambiente de desenvolvimento integrado, é um software que combina ferramentas comuns de desenvolvimento em uma única interface gráfica do usuário (GUI), facilitando o desenvolvimento de aplicações.
-
 * O Java possui um conjunto de ferramentas para se desenvolver programas baseados nele, que são conhecidos como **Java Development Kit ou JDK**, sendo este o ambiente voltado para os desenvolvedores.
-
 * A **JDK** faz parte do funcionamento das IDE's - programas de desenvolvimento como IntelliJ, Eclipse, NetBeans, etc.
 
-  
+
+
+### Variáveis, Tipos de Dados, Operadores Matemáticos em Java
+
+
+
+* Conceituação e criação : "Variáveis são um espaço na memória do computador, onde se pode guardar valores" 
+
+  1. Instância : objeto
+  2. Classe: classe
+  3. Local: dentro de métodos
+  4. Parâmetro: Na assinatura do método
+
+  - Padrão de definição:
+
+    <?visibilidade?><?modificador?>tipo nome <?=valorInicial?>;
+
+    V: "public", "protected" e "private" -> visibilidade
+
+    M: "static" e "final"
+
+    T: tipo de dado
+
+    N: nome do que é fornecido a variável
+
+    VI: um valor inicial, caso deseje
+
+  - Convenções e regras:
+
+    1. Não devem começar com números;
+
+    2. Embora permitido, "$" e "_" devem ser evitados;
+
+    3. São case-sensitive;
+
+    4. Sem espaços;
+
+    5. Não pode ser as palavras reservadas do Java;
+
+       (abstract;  continue; for; new; switch; assert; default; goto; package; synchronize; boolean; do; if; private; this; break; double; case; Implements; throw; protected; byte; else; import; public; throws; enum; instanceof; return; transient; catch; extends; int; short; try; char; final; interface; static; void;class; finally; long; strictfp; volatile; const; float; super;while)
+
+  - Boas Práticas:
+
+    1. Sempre começar com letras minusculas;
+    2. Nomes expressivos;
+    3. Notação camelo;
+    4. Quando constante(final) minuscula e separada por "_";
+    
+    EXS:
+    
+    - int quatidadeProduto;
+    - **int QuantidadeProduto; **erro/n é boa prática
+    - int final NUMEROS_TENTATIVAS = 5;
+    - **int final numeroTentativas = 5;** erro/n é boa prática
+    - **int NUMERO_TENTATIVAS = 5;** erro/n é boa prática
+    - **int qtdProd;** erro/n é boa prática
+    - int i; 
+
+* Tipos de Dados :
+
+* Operadores Aritméticos :
+
+* Conversões(casting) : 
+
+
+
+
+
