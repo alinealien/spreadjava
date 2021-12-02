@@ -126,7 +126,25 @@
     - **int qtdProd;** erro/n é boa prática
     - int i; 
 
-* Tipos de Dados :
+* Tipos de Dado : São os valores e consequentemente operações que as variaveis podem assumir, sofrer, respectivamente.
+
+  - Tipicação:
+    1. Estática(forte) vs Dinâmica(fraco)
+    2. Primitivo vs Composto
+  - Opções de tipos:
+    1.  Textual
+       - **char:caracteres de 16-bit unicode ->** char c = '\u0084'; ou char c = 'T';
+       - **String: um tipo "especial" ->** String s = "T";
+    2. Numeral
+       - **byte: -128 até 127 ->** byte b = 15;
+       - **short: -32.768 até 32.767 ->** short s = - 15785;
+       - **int: -2.147.648 até 2.147.483.647 ->** int i = 8515785;
+       - **long: -9.223.372.036.854.775.808 até 9.223.372.036.854.775.807 ->** long l = 5938515785L;
+       - **float: +-33.40282347E+38F ->** float f = 3.14...(f)
+       - **double: +-1.79769313486231570E+308 ->** double d = 3.14...(d)
+    3. Lógico
+       - **boolean: true e false ->** boolean s = false;
+    4. Objeto
 
 * Operadores Aritméticos :
 
