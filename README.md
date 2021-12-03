@@ -146,7 +146,13 @@
        - **boolean: true e false ->** boolean s = false;
     4. Objeto
 
-* Operadores Aritméticos :
+* Operadores Aritméticos : São simbolos especiais quais são capazes de realizar ações específicas em , um ou mais operandos e, em seguida retornar um resultado.
+
+  - Tipos:
+    - pós-fixado: exp++ ou exp--
+    - prefixado: ++exp ou --exp
+    - aritmetico: +.=.*./ e %
+    - atribuição: =, +=, -=, *=, /= e %=
 
 * Conversões(casting) : 
 
