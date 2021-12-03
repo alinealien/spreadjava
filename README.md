@@ -185,8 +185,6 @@
 
       
 
-      ![tabela] (C:\Workspace\spreadjava\variaveis-tiposdedados-e-operadoresmatematicos\img\casting_tabela.png) 
-
 
 
 
