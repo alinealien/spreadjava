@@ -185,7 +185,7 @@
 
       
 
-      ![Tabela] (https://i.pinimg.com/564x/8b/7f/f5/8b7ff569760cf5f6aa014b802d701ff9.jpg) 
+      ![tabela] (C:\Workspace\spreadjava\variaveis-tiposdedados-e-operadoresmatematicos\img\casting_tabela.png) 
 
 
 
