@@ -186,7 +186,7 @@
       
 
       ```
-      ![Logo do R](https://br.pinterest.com/pin/79516749662857862/)
+      ![Logo do R](https://i.pinimg.com/564x/8b/7f/f5/8b7ff569760cf5f6aa014b802d701ff9.jpg)
       ```
 
        
