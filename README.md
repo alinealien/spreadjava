@@ -153,6 +153,26 @@
     - prefixado: ++exp ou --exp
     - aritmetico: +.=.*./ e %
     - atribuição: =, +=, -=, *=, /= e %=
+  - Exemplos: 
+    - int i = ++k; -> i = k + 1;
+    - int j = k--; -> j = k; k = k - 1;
+    - float f = 1.5f + 4.5f;
+    - long l = 10398L * 5L;
+    - double d = 45d / 4d;
+    - int k = 15 % 4;
+    - double d = f;
+    - i +=5; -> i = i + 5;
+    - j -= 3; -> j = j - 3;
+    - d /= 2.7d; -> d = d/2.7d;
+    - I *=3; -> I = I * 3;
+    - k %= 2; -> k = k % 2;
+  - Precedências:
+    - Operador e Precedência:
+      1. Pós-fixado: exp++, exp--
+      2. Prefixado: ++exp, --exp
+      3. Multiplicativo: *, /, %
+      4. Aditivo: +, -
+      5. Atribuição: =, +=, -=, *=, /=, %=
 
 * Conversões(casting) : 
 
