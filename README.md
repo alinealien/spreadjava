@@ -176,6 +176,21 @@
 
 * Conversões(casting) : 
 
+  - "É a transformação de determinada variável de tipo menos específico para um tipo mais específico"
+
+    - Tipos:
+
+      1. Upcast(Implícito):  Promoção de um tipo menor de dado para um tipo maior de dado (representação e armazenamento).
+      2. Downcast(Explicíto): Promoção de um tipo maior para um tipo menor de dado (representação e armazenamento).
+
+      
+
+      ```
+      ![Logo do R](https://br.pinterest.com/pin/79516749662857862/)
+      ```
+
+       
+
 
 
 
