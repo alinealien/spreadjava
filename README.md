@@ -1,5 +1,7 @@
 #  SPREAD JAVA DEVELOPER
 
+###### (Página em Edição, desconsiderar os erros. Aos poucos vou corrigindo os erros. Estou dado prioridade ao conteúdo e a execução do código, uso a página inicial como um **diário de bordo** dos assuntos estudados.)
+
 ### Apresentação Geral - Aula Dominando IDEs
 
 * **Java** é uma linguagem de progração orientada a objetos desenvolvida na década de 90, na empresa Sun Microsystems e posteriormente adquirida pela Oracle em 2008.
@@ -211,9 +213,7 @@
     
     ​                                       
     
-                                 ###  **Exemplos:**
-    
-    
+    Exemplos:
     
     ​       - int i1 = 10; int i 2 = 20; float f1 = 4.5f; float f2= 3.5f; char c1 = 'x'; char c2 = 'y'; String s1 = "Fulano"; String s2 = "Fulano"; boolean b1 = true; boolean b2 = false;
     
@@ -227,9 +227,8 @@
     
     ​      4. s1 == s2, s1 != s2, **s1 >= s2, s1 < s2**
     
-    ​      5. b1 == b2, b1 != b2, **b1 > b2, b1 <= i1** 
-    
-             6. I2 > f1
+          5. b1 == b2, b1 != b2, **b1 > b2, b1 <= i1** 
+          5. I2 > f1
   
   
   
@@ -245,20 +244,16 @@
 
      - Terminologia: **and(e)**
 
-       O-E | O-E | R
+       
 
-       ------|-------|------
-
-         V   |   V   | V
-
-         V   |   F   | F
-
-         F   |   V   | F
-
-         F   |   F   | F
-
-       (O - Operando E - Expressão R - Resultado)
-
+       | O-E  | O-E  | R    |
+   | ---- | ---- | ---- |
+       | V    | V    | V    |
+   | V    | F    | F    |
+       | F    | V    | F    |
+   | F    | F    | F    |
+       
+   (O - Operando E - Expressão R - Resultado)
        
 
   2. Disjunção: Oepração que só é falsa quando ambos os operando ou expressões envolvidas são falsos.
@@ -267,38 +262,32 @@
 
      - Terminologia: **or(ou)**
 
-       O-E | O-E | R
+       
 
-       ------|-------|------
-
-         V   |   V   | V
-
-         V   |   F   | V
-
-         F   |   V   | V
-
-         F   |   F   | F
-
-       (O - Operando E - Expressão R - Resultado)
-
+       | O-E  | O-E  | R    |
+   | ---- | ---- | ---- |
+       | V    | V    | V    |
+   | V    | F    | V    |
+       | F    | V    | V    |
+   | F    | F    | F    |
+       
+   (O - Operando E - Expressão R - Resultado)
        
 
   3. Disjunção exclusiva: Operação que só é verdade quando ambos os operandos ou expressões são opostos;
 
      - Simbologia: **^**
-     - Terminologia: **xor**
+   - Terminologia: **xor**
+  
+   ​       
+  
+   | O-E  | O-E  | R    |
+     | ---- | ---- | ---- |
+   | V    | V    | F    |
+     | V    | F    | V    |
+     | F    | V    | V    |
 
-     ​       O-E | O-E | R
-
-     ​       ------|-------|------
-
-     ​         V   |   V   | F
-
-     ​         V   |   F   | V
-
-     ​         F   |   V   | V
-
-     ​         F   |   F   | F
+     
 
      (O - Operando E - Expressão R - Resultado)
 
@@ -310,33 +299,32 @@
 
      - Terminologia: **inverção**
 
-       O-E |  R
-
-       ------|-------
-
-         V   |   F  
-
-         F   |   V   
-
        
 
-       (O - Operando E - Expressão R - Resultado)
-
-     
-
-     ### **Exemplos - Boas Práticas:**
-
-     
-
-     - Operadores bitwise: **& e |**
-
-     - Operadores shift:  **~, >>, >>>, <<**
-
+       | O-E  | R    |
+| ---- | ---- |
+       | V    | F    |
+| F    | V    |
        
 
-  boolean b1 = true; boolean b2 = false;
+       
+(O - Operando E - Expressão R - Resultado)
+     
 
-  boolean b3 = true; boolean b4 = false;
+     
+### **Exemplos - Boas Práticas:**
+     
+
+     
+- Operadores bitwise: **& e |**
+     
+- Operadores shift:  **~, >>, >>>, <<**
+     
+  
+  
+boolean b1 = true; boolean b2 = false;
+  
+boolean b3 = true; boolean b4 = false;
 
 
 
@@ -485,6 +473,56 @@
 - Evitar o efeito "flecha" dos if's
 - Evitar muitos if's aninhados
 - Usar a boa prática da aula 2 para diminuir o tamanho do if
+
+
+
+
+
+### Blocos
+
+É um grupo de 0 ou mais códigos quais trabalham em conjunto para executar uma operação.
+
+Tipos:
+
+* Locais: dentro de métodos
+
+  {
+
+  ...
+
+  }
+
+  ____
+
+  if (autorizado){
+
+  **Carregarperfil**
+
+  **DirecionarPáginaPrincipal**
+
+  }
+
+  ____
+
+  if (menorIdade){
+
+  **DirecionarPáginaProibido**
+
+  }
+
+  _____
+
+  
+
+* Estáticos: dentro de classes
+
+* Instância: dentro de classes
+
+* 
+
+
+
+
 
 
 
