@@ -1,6 +1,10 @@
 #  SPREAD JAVA DEVELOPER
 
-###### (Página em Edição, desconsiderar os erros. Aos poucos vou corrigindo os erros. Estou dado prioridade ao conteúdo e a execução do código, uso a página inicial como um **diário de bordo** dos assuntos estudados.)
+###### (Página em Edição, desconsiderar os erros. Aos poucos vou corrigindo-os . Estou dando prioridade ao conteúdo e a execução do código, uso a página inicial (README) como um **diário de bordo** dos assuntos estudados.)
+
+______
+
+
 
 ### Apresentação Geral - Aula Dominando IDEs
 
@@ -69,6 +73,8 @@
 * **IDE**, ou ambiente de desenvolvimento integrado, é um software que combina ferramentas comuns de desenvolvimento em uma única interface gráfica do usuário (GUI), facilitando o desenvolvimento de aplicações.
 * O Java possui um conjunto de ferramentas para se desenvolver programas baseados nele, que são conhecidos como **Java Development Kit ou JDK**, sendo este o ambiente voltado para os desenvolvedores.
 * A **JDK** faz parte do funcionamento das IDE's - programas de desenvolvimento como IntelliJ, Eclipse, NetBeans, etc.
+
+______________________________________
 
 
 
@@ -185,9 +191,9 @@
 
 
 
+
+
 ## Logica Condicional e Controle de Fluxo em Java
-
-
 
 - ​	**Operadores Relacionais:** São simbolos especiais que são capazes de realizar comparação entre determinados operandos e, em seguida, retornar um resultado.
   * Tipos:
@@ -247,35 +253,37 @@
        
 
        | O-E  | O-E  | R    |
-   | ---- | ---- | ---- |
+        | ---- | ---- | ---- |
        | V    | V    | V    |
-   | V    | F    | F    |
+        | V    | F    | F    |
        | F    | V    | F    |
-   | F    | F    | F    |
+        | F    | F    | F    |
        
+  
    (O - Operando E - Expressão R - Resultado)
        
-
+  
   2. Disjunção: Oepração que só é falsa quando ambos os operando ou expressões envolvidas são falsos.
-
+  
      - Simbologia: **||**
-
+  
      - Terminologia: **or(ou)**
-
+  
        
-
+  
        | O-E  | O-E  | R    |
-   | ---- | ---- | ---- |
+        | ---- | ---- | ---- |
        | V    | V    | V    |
-   | V    | F    | V    |
+        | V    | F    | V    |
        | F    | V    | V    |
-   | F    | F    | F    |
+        | F    | F    | F    |
        
+  
    (O - Operando E - Expressão R - Resultado)
        
 
   3. Disjunção exclusiva: Operação que só é verdade quando ambos os operandos ou expressões são opostos;
-
+  
      - Simbologia: **^**
    - Terminologia: **xor**
   
@@ -302,28 +310,30 @@
        
 
        | O-E  | R    |
-| ---- | ---- |
+       | ---- | ---- |
        | V    | F    |
-| F    | V    |
+       | F    | V    |
+       
+       
        
 
-       
 (O - Operando E - Expressão R - Resultado)
      
 
-     
-### **Exemplos - Boas Práticas:**
-     
 
-     
+### **Exemplos - Boas Práticas:**
+
+
+​     
 - Operadores bitwise: **& e |**
-     
+  
 - Operadores shift:  **~, >>, >>>, <<**
-     
   
   
+  
+
 boolean b1 = true; boolean b2 = false;
-  
+
 boolean b3 = true; boolean b4 = false;
 
 
@@ -518,15 +528,75 @@ Tipos:
 
 * Instância: dentro de classes
 
-* 
 
 
 
 
 
 
+### Estruturas de Repetição e Array's em Java
+
+________________________________________________________________________
+
+
+
+- O real poder dos computadores está na sua habilidade para repetir uma operação  ou uma série de operações várias vezes.
+- Cada repetição é chamada de laço (loop) é um dos conceitos básicos da programação estruturada.
+- Uma estrutura  de repetição permite que  uma sequência de comandos seja executada repetidamente, caso determinadas condições sejam satisfeitas. 
+- Essas condições são representadas por expressões lógicas.
+- As estruturas de repetição podem ser classificadas em:
+  1. Repetição com teste no início (while)
+  2. Repetição com teste no final (do-while)
+  3. Repetição contada (for)
+- O comando **break** é utilizado para terminar de forma abrupta uma repetição 
+- Quando o comando _continue_ é executado, os comandos restantes da repetição são ignorados e programa volta a testar novamente ou não.
+
+
+
+![](C:\Workspace\imgs_estudos\aula_estruc_repet.png)
+
+
+
+## OPERADORES DE INCREMENTO E DECREMENTO
+
+
+
+Pré-Fixados
+
+| PARA:                                     | USE O ATALHO: | FORMA ORIGINAL:                        |
+| ----------------------------------------- | ------------- | -------------------------------------- |
+| Somar uma unidade ao valor da variável    | ++numero;     | numero = numero + 1; (retorne numero)  |
+| Subtrair uma unidade do valor da variável | --numero;     | numero = numero - 1; ( retorne numero) |
+
+
+
+Pós-Fixados
+
+| PARA:                                                      | USE O ATALHO: | FORMA ORIGINAL:                        |
+| ---------------------------------------------------------- | ------------- | -------------------------------------- |
+| Somar um ao valor da variável, retornando o valor original | numero++      | ( retorne numero) numero = numero + 1; |
+| Subtrair um valor da variável, retornando o valor original | numero--      | ( retorne numero) numero = numero - 1; |
+
+
+
+## Operações Aritméticas 
+
+
+
+| PARA:                                    | USE O ATALHO: | FORMA ORIGINAL:      |
+| ---------------------------------------- | ------------- | -------------------- |
+| Somar k unidades ao valor da variável    | numero += k;  | numero = numero + k; |
+| Subtrair k unidades do valor da variável | numero -= k;  | numero = numero - k; |
+| Multiplicar o valor da variável por k    | numero *= k;  | numero = numero * k; |
+| Dividir o valor da variável por k        | numero /= k;  | numero = numero / k; |
 
 
 
 
 
+## Array's
+
+- Array é um objeto utilizado para armazenar sequencialmente dados do mesmo tipo.
+- Permanecem com o mesmo tamanho  depois de criados.
+
+![](C:\Workspace\imgs_estudos\aula_array.png)
