@@ -1,9 +1,11 @@
 package dio.aulas.exercicio;
 
 public class Main {
+
     public static void main(String[] args) {
 
-        int[] idades = new int[10];
+
+        /*int[] idades = new int[10];
         idades[0] = 27;
         idades[1] = 31;
         System.out.println("Idade 0: " + idades[0]);
@@ -92,6 +94,9 @@ public class Main {
         for(float float_: floats){
             System.out.println("Float: " + float_);
         }
+
+    }
+}*/
 
     }
 }
