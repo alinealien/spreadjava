@@ -43,3 +43,83 @@ _______________________________________________________
 - Para trabalhar com estruturas de dados dinamicas, a gente não grava os dados na memoria. Utiliza-se o **NÓ**. 
 - Um **Nó** é um espaço na memoria que armazena tanto o dado que queremos, como uma referecia a um nó.
 - Encadeamento de nó:
+
+**Generics**
+
+- Lista<String> minhaLista = new Lista<>();
+
+  public class Lista<T>{
+
+  private T t;
+
+  .
+
+  .
+
+  }
+
+  - Contexto:
+    - Evitar casting excessivo 
+    - Evitar códigos redundantes 
+    - Encontrar erros em tempo de compilação 
+    - Introduzido desde o Java SE 5.0
+
+--Wildcards--
+
+- Unkknow Wildcards (Unbounded)
+- Bounded Wildcards (Upper Bounded/ Lower Bounded)
+
+--Unknown Wildcard-- 
+
+public void imprimeLista(`List<?>lista`){
+
+for(`Object obj: lista`){
+
+System.out.println( obj)
+
+}
+
+}
+
+List<Aluno> minhaLista = new List<Aluno>(); //funcao generica que imprime qualquer coisa. desde que tenha o string implementado. Genericos. 
+
+imprimeLista(minhaLista);
+
+
+
+--UpperBounded Wildcard--
+
+public void imprimeLista(List<? extends Pessoa> listaPessoas){
+
+for(Pessoa p: listaPessoas)
+
+System.out.println(p);
+
+}
+
+}
+
+List<Aluno> minhaLista = new List<Aluno>();
+
+imprime(minhaLista);
+
+//SO podemos ter na estrutura de generics (passar) listas de pessoas e descendentes de pessoas (herdeiros). 
+
+
+
+--LowerBounded Wildcard--
+
+public void imprimeLista(List<? super Pessoas> listaPessoa){
+
+for(Pessoa p : listaPessoas){
+
+System.out.println(p);
+
+​    }
+
+}
+
+List<Aluno> minhaLista = new List<Aluno>();
+
+imprimeLista(minhaLista);
+
