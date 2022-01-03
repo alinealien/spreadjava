@@ -109,6 +109,8 @@ imprime(minhaLista);
 
 --LowerBounded Wildcard--
 
+//Qualquer herdeiro de **Pessoa**, neste metodo ele não irá aceitar (lista de qualquer herdeiro da classePessoa) Só irá aceitar da classe Pessoa para cima. 
+
 public void imprimeLista(List<? super Pessoas> listaPessoa){
 
 for(Pessoa p : listaPessoas){
@@ -122,4 +124,65 @@ System.out.println(p);
 List<Aluno> minhaLista = new List<Aluno>();
 
 imprimeLista(minhaLista);
+
+
+
+**Convenção**
+
+- **K** para "Key", exemplo : Map<K,V>
+- **V** para "Value", exemplo : Map<K,V>
+- **E** para "Element", exemplo : List<E>
+- **T** para "Type", exemplo : Collections#addAll
+- ? para quando genérico
+
+
+
+**Refatoração da Classe No**
+
+EX_1 :
+
+public class No{
+
+private String conteudo;
+
+private No proximoNo = null
+
+.
+
+.
+
+.
+
+}
+
+EX_1_Como vai ficar:
+
+public class No<T>{
+
+private T conteudo;
+
+private No proximoNo = null
+
+.
+
+.
+
+.
+
+} //vai aceitar o conteudo de qualquer tipo. Vai criar um tipo T generico.
+
+
+
+**Pilhas [LIFO: Last In, Frist Out]** 
+
+- LIFO
+
+  - Last in Frist Out
+  - O ultimo elemento que entra é o primeiro a sair 
+
+- Método Top 
+
+  - No meuNo = pilha.top();
+
+    No meuNo = int -> 
 
