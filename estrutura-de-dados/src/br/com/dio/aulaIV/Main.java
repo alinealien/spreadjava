@@ -17,7 +17,7 @@ public class Main {
 
         System.out.println(minhaListaEncadeada);
 
-        minhaListaEncadeada.remove(3);
+        minhaListaEncadeada.remove(3); //para remover o index 3
 
         System.out.println(minhaListaEncadeada);
 
