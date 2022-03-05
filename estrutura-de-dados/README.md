@@ -180,9 +180,47 @@ private No proximoNo = null
   - Last in Frist Out
   - O ultimo elemento que entra é o primeiro a sair 
 
-- Método Top 
+- Método Top (Aqui ele pega só a informação)
 
   - No meuNo = pilha.top();
 
-    No meuNo = int -> 
+    No meuNo = int -> Ref.Nó; (Aqui ele vai receber a referencia do primeiro Nó)
+    
+    int numero = meuNo.getInt();
+  
+- Método Pop (Aqui ele tira o primeiro "dado" da pilha, a referencia aqui vai mudar)
+
+  - No meuNo = pilha.pop();
+
+    No meuNo = int -> Ref. Nó; (Referencia do todo da fila que será tirado)
+
+    int numero = meuNo.getInt(); (Aqui ela exclui o de cima, pega o primeiro Nó, no entanto, na pilha ele será apagado. ele exclui repassando a referencia de top no Nó logo abaixo )
+
+    int numero = int; ()
+
+- Método Push (Contrario do metodo pop )
+
+  - No meuNo = new No();
+
+    meuNo.setInt(1);
+
+    meuNo -> int | null (Ele vai criar um novo nó e colocará ele no topo da pilha)
+
+    (Fazer a referencia o proximo nó desse novo no apontar pro topo da pilha e gerar uma nova referencia que aponta pro topo da pilha, assim teremos o novo nó incluido na pilha)
+
+- Método isEmpty (Diz se a pilha esta vazia ou não)
+
+  - public boolean isEmpty(){
+
+    if(refNo == null){
+
+    return true;
+
+    }
+
+    return false; 
+
+    }
+
+    (Retorna a pilha ou estrutura de dados - verifica a referencia de entrada esta nula. Caso a referencia de no for null ela retornará true)
 
